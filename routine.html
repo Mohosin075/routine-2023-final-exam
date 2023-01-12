@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Routine 2023</title>
+    <!-- font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lobster&family=Montserrat:wght@200;400;500&family=Nunito:wght@400;500;600;800&family=Open+Sans&family=Poppins:ital,wght@0,200;0,300;0,500;1,200;1,300&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+        :root{
+            --primary-color: #29106e;
+            --secondary-color: red;
+            --color: #000;
+            --head-color: #fff;
+            --hover-color: #17093d;
+        }
+        main{
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(160deg, blueviolet, aqua   );
+            color: var(--color);
+        }
+        .routine23{
+            padding: 50px 40px;
+            background-color: #F8F8F8;
+            border-radius: 10px;
+            text-align: center;
+            
+        }
+        .routine-heading{
+            background-color: var(--primary-color);
+            color: var(--head-color);
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 100px;
+            
+
+        }
+        .routine-heading h1{
+            font-size: 40px;
+        }
+        .routine-heading h2{
+            font-size: 25px;
+        }
+        .tech-sem{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .tech-sem > div{
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            color: var(--head-color);
+            padding: 7px 25px;
+        }
+        .routine{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 30px;
+        }
+
+        .routine div{
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            margin: 2px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: var(--head-color);
+            font-weight: 500;
+        }
+        .routine div:hover{
+            background-color: var(--hover-color);
+        }
+        .routine .head{
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 18px;
+        }
+        .routine .head:hover{
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        @media screen and (max-width: 576px) {
+            
+            .routine23{
+            padding: 20px 10px;
+        }
+        .routine-heading{
+            padding: 20px;
+            margin: 0;
+        }
+        .routine-heading h1{
+            font-size: 18px;
+        }
+        .routine-heading h2{
+            font-size: 14px;
+        }
+        .tech-sem{
+            flex-direction: column;
+        }
+        .tech-sem div{
+            margin-top: 5px;
+            font-size: 12px;
+        }
+        .routine{
+            margin-top: 10px;
+        }
+        .routine div{
+            padding: 5px;
+            margin: 1px;
+            font-size: 13px;
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .routine .head{
+            font-size: 14px;
+        }
+        }
+        @media screen and (min-width: 577px) {
+            main{
+                height: 100vh;
+            }
+        }
+    </style>
+  </head>
+  <body>
+   <main>
+    <section class="routine23">
+        <div class="routine-heading">
+          <h1>Diploma in Engineering</h1>
+          <h2>Final Exam Routine-2023</h2>
+        </div>
+          <div class="tech-sem">
+              <div><h3>Technology : Computer</h3></div>
+              <div><h3>mohosinali075@gmail.com</h3></div>
+              <div><h3>Semester : 4th</h3></div>
+          </div>
+          <div class="routine">
+              <div class="head">Date & Day</div>
+              <div class="head">Time</div>
+              <div class="head">Sub Code</div>
+              <div class="head">Subject</div>
+  
+              <div>29-01-2023</div>
+              <div>10:00</div>
+              <div>66641</div>
+              <div>Object Oriented Programming</div>
+  
+              <div>31-01-2023</div>
+              <div>10:00</div>
+              <div>66644</div>
+              <div>Data Communication System</div>
+  
+              <div>06-02-2023</div>
+              <div>10:00</div>
+              <div>66842</div>
+              <div>Principal Of Digital Electronics</div>
+  
+              <div>12-02-2023</div>
+              <div>10:00</div>
+              <div>66645</div>
+              <div>Computer Peripherals</div>
+  
+              <div>14-02-2023</div>
+              <div>10:00</div>
+              <div>66642</div>
+              <div>Data Structure and Algorithm</div>
+  
+              <div>26-02-2023</div>
+              <div>10:00</div>
+              <div>65841</div>
+              <div>Business Organization</div>
+          </div>
+      </section>
+   </main>
+  </body>
+</html>
