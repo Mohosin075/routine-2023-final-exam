@@ -1,0 +1,126 @@
+/* universal css style */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --primary-color: #29106e;
+  --secondary-color: red;
+  --color: #000;
+  --head-color: #fff;
+  --hover-color: #17093d;
+}
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, blueviolet, aqua);
+  color: var(--color);
+}
+.routine23 {
+  padding: 50px 40px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  text-align: center;
+}
+.routine-heading {
+  background-color: var(--primary-color);
+  color: var(--head-color);
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 100px;
+}
+.routine-heading h1 {
+  font-size: 40px;
+}
+.routine-heading h2 {
+  font-size: 25px;
+}
+.tech-sem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tech-sem > div {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  color: var(--head-color);
+  padding: 7px 25px;
+}
+.routine {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+}
+
+.routine div {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  margin: 2px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: var(--head-color);
+  font-weight: 500;
+}
+.routine div:hover {
+  background-color: var(--hover-color);
+}
+.routine .head {
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+}
+.routine .head:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* responsive part */
+
+
+@media screen and (max-width: 996px) {
+  .routine23 {
+    padding: 20px 10px;
+  }
+  .routine-heading {
+    padding: 20px;
+    margin: 0;
+  }
+  .routine-heading h1 {
+    font-size: 18px;
+  }
+  .routine-heading h2 {
+    font-size: 14px;
+  }
+  .tech-sem {
+    flex-direction: column;
+  }
+  .tech-sem div {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .routine {
+    margin-top: 10px;
+  }
+  .routine div {
+    padding: 5px;
+    margin: 1px;
+    font-size: 13px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .routine .head {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 997px) {
+  main {
+    height: 100vh;
+  }
+}
